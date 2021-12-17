@@ -76,3 +76,24 @@
 .atom-debug-ui-gutter button.btn.btn-action.octicon.inline-block-tight::before {
     margin-right: 3px;
 }
+
+// Panel headings -- align center - fix heights
+.atom-debug-ui {
+    .atom-debug-uig-collapsable-header--title {
+        flex: 1
+    }
+    .atom-debug-uig-collapsable-header.panel-heading {
+        display: flex;
+        align-items: center;
+        span.close-icon {
+            height: 1em;
+            line-height: 2em;
+        }
+        span.close-icon:hover {
+            transform: none;
+        }
+    }
+    .panel-heading {
+        padding: 6px;
+    }
+}
